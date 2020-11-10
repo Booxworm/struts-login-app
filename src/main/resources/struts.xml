@@ -11,6 +11,11 @@
         <action name="index">
             <result>/index.jsp</result>
         </action>
+
+        <action name="login" class="com.grp61.app.Login" method="execute">  
+            <result name="success">loginsuccess.jsp</result>  
+            <result name="error">loginerror.jsp</result>  
+        </action>
     </package>
 
 </struts>
