@@ -1,5 +1,12 @@
 # struts-login-app
 
+## Cloning the project
+To clone the project to your local computer, run the following
+```
+git clone https://github.com/Booxworm/struts-login-app
+cd struts-login-app
+```
+
 ## Creating MySQL table
 Go to <https://dev.mysql.com/doc/refman/8.0/en/installing.html> to install mySQL on your local computer.
 Ensure that the bin files are added to your environment path.
