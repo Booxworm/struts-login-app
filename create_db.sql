@@ -1,4 +1,4 @@
-DROP DATABASE CZ3002_login;
+DROP DATABASE IF EXISTS CZ3002_login;
 CREATE DATABASE CZ3002_login;
 USE CZ3002_login;
 CREATE TABLE login_info (username varchar(64), password varchar(64));
