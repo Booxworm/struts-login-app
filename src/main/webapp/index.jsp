@@ -10,7 +10,7 @@
         <h1>Welcome To Group 61!</h1>
         <s:form action="login">
             <s:textfield name="username" label="Name" />
-            <s:password name="userpass" label="Password" />
+            <s:password name="password" label="Password" />
             <s:submit value="Login" />
         </s:form>
     </body>

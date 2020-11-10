@@ -8,6 +8,7 @@
     </head>
     <body>
         <h1>Successful Login!</h1>
+        <p>Welcome, <s:property value="username" /></p>
         <p><a href="<s:url action='index'/>">Back</a></p>
     </body>
 </html>

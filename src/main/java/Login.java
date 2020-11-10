@@ -5,7 +5,7 @@ import org.apache.struts2.dispatcher.SessionMap;
 import org.apache.struts2.interceptor.SessionAware;
 
 public class Login implements SessionAware{
-    private String username,userpass;
+    private String username, password;
     SessionMap<String,String> sessionmap;
     
     public String getUsername() {
@@ -16,16 +16,16 @@ public class Login implements SessionAware{
         this.username = username;
     }
     
-    public String getUserpass() {
-        return userpass;
+    public String getPassword() {
+        return password;
     }
     
-    public void setUserpass(String userpass) {
-        this.userpass = userpass;
+    public void setPassword(String password) {
+        this.password = password;
     }
     
     public String execute(){
-        if(LoginDao.validate(username, userpass)){
+        if(LoginDao.validate(username, password)){
             return "success";
         }
         else{
@@ -36,10 +36,5 @@ public class Login implements SessionAware{
     public void setSession(Map map) {
         sessionmap=(SessionMap)map;
         sessionmap.put("login","true");
-    }
-    
-    public String logout(){
-        sessionmap.invalidate();
-        return "success";
     }
 }
